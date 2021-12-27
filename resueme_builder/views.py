@@ -61,7 +61,7 @@ def submitdata(request):
         
         # print("process 33333333333333333333333")
 
-        f=open("D:/django/resueme_builder/asset/"+dp.name,"wb")
+        f=open("D:/django/resueme_builder/resume-builder/asset/"+dp.name,"wb")
         for chunk in dp.chunks():
             f.write(chunk)
         f.close()
