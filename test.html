@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="your-client-id-goes-here">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script src="https://accounts.google.com/gsi/client" async defer></script> -->
+    <script>
+        function onSignIn(googleUser) {
+          // get user profile information
+          console.log(googleUser.getBasicProfile())
+        }
+      </script>
+
+
+    <h1>Welcome to the Demo</h1>
+    <!-- <div class="g-signin2"></div> -->
+
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+<!--     
+    <div id="g_id_onload"
+    data-client_id="694731639690-mjfanbj34obssprab15s28drm4c22jfh.apps.googleusercontent.com"
+    data-context="signin"
+    data-ux_mode="popup"
+    data-login_uri="resume">
+</div> -->
+<div id="signin">here</div>
+
+<div class="g_id_signin"
+    data-type="standard"
+    data-shape="rectangular"
+    data-theme="outline"
+    data-text="signin_with"
+    data-size="large"
+    data-logo_alignment="left">
+</div>
+
+</body>
+</html>

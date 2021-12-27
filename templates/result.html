@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+	<title>{{data.firstname}} Resume</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" /> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="static/resume.css" media="all" />
+
+</head>
+<body>
+
+<div id="doc2" class="yui-t7">
+	<div id="inner">
+	
+		<div id="hd">
+			<div class="yui-gc">
+				<div class="yui-u first">
+					<h2 >{{data.firstname}}{{data.lname}}</h2>
+					<h2>{{data.jtitle}}</h2>
+					
+					
+					<img src="static/{{data.dp}}" alt="img">
+				</div>
+
+				<div class="yui-u">
+					<div class="contact-info">
+						<h3><a id="pdf" href="/pdf">Download PDF</a></h3>
+						<h3><a href="mailto:name@yourdomain.com">{{data.email}}</a></h3>
+						<h3>{{data.phone}}</h3>
+					</div><!--// .contact-info -->
+				</div>
+			</div><!--// .yui-gc -->
+		</div><!--// hd -->
+
+		<div id="bd">
+			<div id="yui-main">
+				<div class="yui-b">
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Profile</h2>
+						</div>
+						<div class="yui-u">
+							<p class="enlarge">
+								{{data.about_me}} 
+							</p>
+						</div>
+					</div><!--// .yui-gf -->
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Project</h2>
+						</div>
+						<div class="yui-u">
+								<div class="talent">
+									<h2>{{data.Tproject}}</h2>
+									<p>{{data.Dproject}}</p>
+								</div>
+						</div>
+					</div><!--// .yui-gf -->
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Skills</h2>
+						</div>
+						<div class="yui-u">
+							<p>{{data.skill}}</p>
+						</div>
+					</div><!--// .yui-gf-->
+
+					<div class="yui-gf">
+	
+						<div class="yui-u first">
+							<h2>Experience</h2>
+						</div><!--// .yui-u -->
+
+						<div class="yui-u">
+
+							<div class="job">
+							<p>{{data.CompanyName}}</p>
+							<p>{{data.Company_summary}}</p>
+                            </div>
+
+						</div><!--// .yui-u -->
+					</div><!--// .yui-gf -->
+
+
+					<div class="yui-gf last">
+						<div class="yui-u first">
+							<h2>Education</h2>
+						</div>
+						<div class="yui-u">
+							<h2>{{data.school_name}}</h2>
+							<p>class 10th marks :- {{data.class10}}</p>
+							<p>class 12th marks :- {{data.class12}}</p>
+							<h3>{{data.Collage_Name}}</h3>
+							<p>{{data.collage_CGPA}}</p>
+						</div>
+					</div><!--// .yui-gf -->
+
+
+				</div><!--// .yui-b -->
+			</div><!--// yui-main -->
+		</div><!--// bd -->
+
+		<div id="ft">
+			<p><i class="fab fa-linkedin"></i><a href="mailto:{{data.linkedin}}">{{data.linkedin}}</a> </p>
+            <p><i class="fab fa-github"></i> <a href="mailto:{{data.github}}">{{data.github}}</a> </p>
+		</div><!--// footer -->
+
+	</div><!-- // inner -->
+
+
+</div><!--// doc -->
+
+
+</body>
+</html>
+
